@@ -1,21 +1,7 @@
 .page-home {
-  --background: #CC2C34;
-
-  height: 100vh;
+  padding-top: 30vh;
   color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: radial-gradient(ellipse at center, var(--background) 0%, rgba(204,44,52,0.9) 100%);
-
-  .title {
-    font-size: 4em;
-    font-weight: bold;
-    text-shadow: -1px -1px 0px var(--background),
-    3px 3px 0px var(--background),
-    6px 6px 0px #7E2929;
-  }
+  text-align: center;
 
   .feature-container {
     margin-top: 5em;

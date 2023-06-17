@@ -9,6 +9,7 @@ import {
   DesktopWindows as DesktopWindowsIcon
 } from '@mui/icons-material'
 import { version } from "../../../package.json"
+import { Link } from 'react-router-dom'
 
 const IconButtonLink = (props: any) => {
   return (
@@ -26,7 +27,6 @@ const IconButtonLink = (props: any) => {
 function Home() {
   return (
     <div className="page-home">
-      <div className='title'>IELTS TOOLS</div>
       <TypeAnimation
         sequence={[
           'Awesome tools for IELTS examinee',
@@ -39,13 +39,14 @@ function Home() {
       />
 
       <div className="feature-container">
-        <Button variant="contained" style={{
-          backgroundColor: '#fff',
-          color: '#CC2C34',
-        }}
-        href="/corpus">
-          Corpus
-        </Button>
+        <Link to="/corpus">
+          <Button variant="contained" style={{
+            backgroundColor: '#fff',
+            color: '#CC2C34',
+          }}>
+            Corpus
+          </Button>
+        </Link>
       </div>
       <div className="download-container">
         <IconButtonLink title="Download macOS client" href="https://google.com">
