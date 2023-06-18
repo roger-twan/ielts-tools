@@ -8,18 +8,35 @@
     height: 100%;
     background: radial-gradient(ellipse at center, var(--background) 0%, rgba(204,44,52,0.9) 100%);
     z-index: -1;
+    transition: all 0.3s;
   }
 
   .logo {
     position: absolute;
-    top: 12vh;
-    left: 50%;
     color: white;
     font-size: 4em;
+    top: 12vh;
+    left: 50%;
     transform: translateX(-50%);
+    transition: all 0.5s;
     font-weight: bold;
     text-shadow: -1px -1px 0px var(--background),
     3px 3px 0px var(--background),
     6px 6px 0px #7E2929;
+    user-select: none;
+    z-index: 1;
+  }
+
+  &.collapse {
+    &::before {
+      width: 0;
+    }
+    .logo {
+      font-size: 2em;
+      top: 10px;
+      left: 10px;
+      transform: translateX(0);
+      cursor: pointer;
+    }
   }
 }

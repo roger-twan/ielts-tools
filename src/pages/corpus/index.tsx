@@ -4,4 +4,4 @@ function Corpus() {
   )
 }
 
-export default Corpus;
+export default Corpus

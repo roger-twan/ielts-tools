@@ -1,0 +1,15 @@
+.layout-corpus {
+  --menuWidth: 240px;
+
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+
+  .menu {
+    width: var(--menuWidth);
+  }
+
+  .content {
+    padding: 10px;
+  }
+}
