@@ -1,12 +1,14 @@
 import './menu.scss'
 import { MenuItem, MenuList, ListItemIcon } from '@mui/material'
 import { useNavigate, useLocation } from 'react-router-dom'
-import {Home as HomeIcon} from '@mui/icons-material'
+import {
+  Dashboard as DashboardIcon,
+  Home as HomeIcon
+} from '@mui/icons-material'
 
 interface MenuProps {
   className?: string
 }
-
 function CorpusMenu(props: MenuProps) {
   const navigate = useNavigate()
   const location = useLocation()
@@ -16,6 +18,7 @@ function CorpusMenu(props: MenuProps) {
     <div
       className={`layout-corpus-menu ${props.className}`}
     >
+      <p className='menu-title'>Corpus</p>
       <MenuList>
         <MenuItem
           className='menu-item'
@@ -23,9 +26,9 @@ function CorpusMenu(props: MenuProps) {
           selected={currentPath === '/corpus'}
         >
           <ListItemIcon>
-            <HomeIcon sx={{color: 'white'}} />
+            <DashboardIcon sx={{color: 'white'}} />
           </ListItemIcon>
-          Index
+          Dashboard
         </MenuItem>
         <MenuItem
           className='menu-item'

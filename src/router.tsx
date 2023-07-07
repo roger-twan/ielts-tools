@@ -1,9 +1,9 @@
 import { createBrowserRouter } from 'react-router-dom'
 import Home from './pages/home'
 import ErrorPage from './pages/error'
-import Corpus from './pages/corpus'
 import MainLayout from './layout/main'
 import CorpusLayout from './layout/corpus'
+import CorpusDashboard from './pages/corpus/dashboard'
 import Tables from './pages/corpus/table'
 
 const routes = [
@@ -22,7 +22,7 @@ const routes = [
         children: [
           {
             index: true,
-            element: <Corpus />,
+            element: <CorpusDashboard />,
           },
           {
             path: 'table',
