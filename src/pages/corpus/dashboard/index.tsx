@@ -1,6 +1,6 @@
 function CorpusDashboard() {
   return (
-    <div>12</div>
+    <div>dashboard</div>
   )
 }
 
